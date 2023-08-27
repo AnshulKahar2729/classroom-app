@@ -1,0 +1,55 @@
+.chat-container {
+    background-color: #222;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+input {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 16px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 16px;
+    border: 1px solid #555;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+.bubble {
+    border: 1px solid #555;
+    border-radius: 20px;
+    background-color: #444;
+    margin: 4px;
+    padding: 7px 13px;
+    display: inline-block;
+}
+
+.message-row.mine {
+    position: relative;
+}
+
+.message-row.mine .bubble {
+    background-color: rgb(2, 96, 163);
+    position: absolute;
+    right: 0;
+}
+
+.message-row.their .bubble{
+    position : absolute;
+    left : 0;
+}
